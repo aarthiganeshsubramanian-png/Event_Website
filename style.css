@@ -1,0 +1,156 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f6fc;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #24558a;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 8px;
+}
+
+/* Navigation */
+nav {
+    background-color: #d9eaff;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #24558a;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e67e22;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 85%;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #24558a;
+    border-bottom: 2px solid #b7d7f5;
+    padding-bottom: 8px;
+}
+
+/* Schedule Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #3979b9;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eef5fc;
+}
+
+/* Speakers */
+.speaker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.speaker div {
+    background-color: #eef5fc;
+    padding: 15px;
+    border-left: 4px solid #3979b9;
+    border-radius: 5px;
+}
+
+.speaker h3 {
+    color: #24558a;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #24558a;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3979b9;
+}
+
+/* Footer */
+footer {
+    background-color: #193b60;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .speaker {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        width: 88%;
+        padding: 18px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
